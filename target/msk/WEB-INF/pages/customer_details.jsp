@@ -18,18 +18,22 @@
 	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 	<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 
 
 	<link rel="stylesheet" href="../css/bootstrapValidator.css">
 	<script src="../js/bootstrapValidator.js"></script>
 
 
+=======
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 </head>
 <script>
 	$(document).ready(function(){
 		$('#myTable').dataTable();
 	});
 	$(document).ready(function(){
+<<<<<<< HEAD
 
 		$('.add_cust').click(function(){
 		   $('.service_add').toggle();
@@ -124,10 +128,18 @@
 				            
 	
 	
+=======
+		$('.add').click(function(){
+		   $('.service_add').toggle();
+		   $(".add").hide();
+		});
+		
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 		$(".service_details_close").click(function(){
 			$(".service_add").hide();
 			$(".add").show();
 		});
+<<<<<<< HEAD
 
 		$(".service_add_close").click(function(){
 			$(".service_add").hide();
@@ -150,6 +162,14 @@
 	});
 	
 
+=======
+	});
+	$(document).ready(function(){
+		$(".service_add_close").click(function(){
+			$(".service_add").hide();
+		});
+	});
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 </script>
 <style>
 	
@@ -175,9 +195,12 @@
 		padding: 16px;
 		margin-top: 5%;
 		height:auto;
+<<<<<<< HEAD
 
 		background-image: url("car-bg.jpg");
 
+=======
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	}
 	#myTable_filter{
 		margin-right:3%;
@@ -212,6 +235,7 @@
 		width:12%;
 	}
 	.btn{
+<<<<<<< HEAD
 
 		padding:3px 10px;
 		border-radius:0px;
@@ -224,6 +248,9 @@
 		font-weight:bold;
 		color:black;
 
+=======
+		padding:3px 12px;
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	}
 	input[type=date]{
 		border-radius:5px;
@@ -247,15 +274,20 @@
 		margin-left:2%;
 		width:14%;
 	}
+<<<<<<< HEAD
 
 
 	.glyphicon-remove-circle{
 		cursor:pointer;
+=======
+	.Service_add_close{
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 		float:right;
 		margin-right:4%;
 		margin-top:2%;
 		font-size:1.5em;
 	}
+<<<<<<< HEAD
 
 
 	.glyphicon-plus-sign,.add{
@@ -281,6 +313,12 @@
 <div>
 <!-- Navigation bar Start -->
 
+=======
+	
+</style>  
+<body>
+<div>
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -289,6 +327,7 @@
 		</div>
 	</nav>
 
+<<<<<<< HEAD
 <!-- Navigation bar Ends -->	
 
 <div class="table-responsive container main">
@@ -296,11 +335,16 @@
 	<table id="myTable" class="display table" width="100%"  >
 		<!-- Table header starts-->
 
+=======
+<div class="table-responsive container main">
+	<table id="myTable" class="display table" width="100%"  >
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 		<thead class="thead" >  
 			<tr>  
 				<th><h4><center>Customer Service Details</center></h4></th>  
 			</tr>  
 		</thead>  
+<<<<<<< HEAD
 
 		<!-- Table header Ends -->
 		
@@ -423,6 +467,104 @@
 			</tbody> 
 		 </table>
 	</div>
+=======
+		<tbody>
+			<tr class="add">
+				<td><b><h3><center>ADD</center></h3></b></td>
+			</tr>
+			
+			  
+			<tr>  
+				<td >
+			
+					<div class="container-fluid "style="display:none">
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
+								NAME : <label> MANI </label>
+							</div>	
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
+								Mobile: <label> 8870134052 </label>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
+								Customer Id : <label> ID00001 </label>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
+								Email : <label> sankarmani110@gmail.com </label>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
+								Expires : <label> 15/04/2018 </label>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow">
+								<center>
+								<button class="btn btn-info service_details_btn" > Service Details </button>
+								</center>
+							</div>
+						</div>
+					</div>
+							
+				</td>  
+			</tr>
+			
+			<tr class="service_add" style="display:none">  
+				<td>
+					<div class="Service_add_close">X</div><br><br>
+					<div class="container service_type">
+						<form action="">
+							<div class="row" style="margin-top:2%">
+								<div class="col-lg-5 form-group" tyle="background-color:red">
+									<div>
+										Enter Customer Name :<input type="text" class="form-control" id="cus_name">
+									</div><br>
+									<div>
+										Mobile Number : <input type="text" class="form-control" id="mobile_no">	
+									</div><br>
+									<div>
+										Email Id: <input type="email" class="form-control" id="email_id">
+									</div>
+									<!--  <div>										
+										Service Type : 
+									</div><br>
+									<div>
+										From Date :	<input type="date">
+									</div><br>
+									<div>
+										To Date &nbsp &nbsp : <input type="date">
+									</div>
+									-->
+								</div>	
+								<div class="col-lg-2 form-group vl" tyle="background-color:yellow">
+									
+								</div>
+								<div class="col-lg-5 form-group" tyle="background-color:blue">
+									<div>										
+										Service Type : <input type="email" class="form-control" id="email_id">
+									</div><br>
+									<div>
+										<span>From Date :<input type="date" class="form-control"></span><br>
+										<span>To Date :<input type="date" class="form-control"></span>
+									</div><br>
+									<div>
+										Details :	<textarea class="form-control" rows="4" id="comment"></textarea>
+									</div>
+									
+								</div>
+							</div>	
+							<div>
+								<div>
+									
+									<button class="btn btn-info save_btn" > SAVE </button>
+								
+								</div>
+							</div>
+						</form>	
+					</div>		
+				</td>  
+			</tr> 			
+		</tbody> 
+		 
+	</table>
+</div>
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 </div>	
 </body>    
 </html>

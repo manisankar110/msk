@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Built-By: FBTadmin
 Build-Jdk: 1.8.0_101
 Created-By: Maven Integration for Eclipse
 
+=======
+Manifest-Version: 1.0
+Built-By: FBTadmin
+Build-Jdk: 1.8.0_101
+Created-By: Maven Integration for Eclipse
+
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6

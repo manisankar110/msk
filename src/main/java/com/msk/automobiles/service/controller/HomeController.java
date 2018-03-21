@@ -53,7 +53,11 @@ public class HomeController {
 	public Viewable index() {
 		return new Viewable("/index");
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	@GET
 	@Path("/login")
 	public Viewable login() {
