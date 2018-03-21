@@ -18,11 +18,9 @@
 	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 	<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
   	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 	
-
 
 	<link rel="stylesheet" href="../css/bootstrapValidator.css">
 	<script src="../js/bootstrapValidator.js"></script>
@@ -37,12 +35,6 @@
 	    $('#table_id').DataTable();
 	} );
 	$(document).ready(function(){
-
-		$('.add').click(function(){
-		   $('.service_add').toggle();
-		   $(".add").hide();
-		});
-		
 
 		$('.add_cust').click(function(){
 		   $('.service_add').toggle();
@@ -137,18 +129,10 @@
 				            
 	
 	
-
 		$(".service_details_close").click(function(){
 			$(".service_add").hide();
 			$(".add").show();
 		});
-
-	});
-	$(document).ready(function(){
-		$(".service_add_close").click(function(){
-			$(".service_add").hide();
-		});
-	});
 
 		$(".service_add_close").click(function(){
 			$(".service_add").hide();
@@ -196,9 +180,9 @@
 		padding: 16px;
 		margin-top: 5%;
 		height:auto;
-
-
+		width:90%;
 		background-image: url("car-bg.jpg");
+
 	}
 	#myTable_filter{
 		margin-right:3%;
@@ -213,9 +197,7 @@
 		background-color:#333333;
 		color:white;
 	}
-	.main{
-		width:90%;
-	}
+	
 	.navbar-inverse{
 		border-radius:0px;
 	}
@@ -270,21 +252,14 @@
 	}
 
 
-
 	.glyphicon-remove-circle{
 		cursor:pointer;
-
-	.Service_add_close{
-
-
-	.glyphicon-remove-circle{
-		cursor:pointer;
-
 		float:right;
 		margin-right:4%;
 		margin-top:2%;
 		font-size:1.5em;
 	}
+
 
 	.glyphicon-plus-sign,.add{
 		opacity:0.2;
@@ -304,12 +279,11 @@
 	
 
 
-
 </style>  
 <body>
+<div>
+<!-- Navigation bar Start -->
 	<div>
-		<!-- Navigation bar Start -->
-
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -317,47 +291,16 @@
 				</div>
 			</div>
 		</nav>
-
-		<!-- Navigation bar Ends -->	
-
-
-<div class="container" style="background-color:black">
-	<h1>adasdasd</h1>
-		
-</div>	
-</div>
-
-	
-</style>  
-<body>
-<div>
-
-<!-- Navigation bar Start -->
-
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">WebSiteName</a>
-			</div>
-		</div>
-	</nav>
-
-
-<div class="table-responsive container main">
-	<table id="myTable" class="display table" width="100%"  >
-
+	</div>
 <!-- Navigation bar Ends -->	
-
-
+	<div>
+		<h3>Customer Details</h3>
+	</div>
 <div class="table-responsive container main">
 
 <!-- Table Starts 
 	<table id="myTable" class="display table" width="100%"  >
-
 		<!-- Table header starts
-
-=======
-		<!-- Table header starts-->
 
 		<thead class="thead" >  
 			<tr>  
@@ -365,107 +308,7 @@
 			</tr>  
 		</thead>  
 
-
 		<!-- Table header Ends 
-
-
-		<tbody>
-			<tr class="add">
-				<td><b><h3><center>ADD</center></h3></b></td>
-			</tr>
-			
-			  
-			<tr>  
-				<td >
-			
-					<div class="container-fluid "style="display:none">
-						<div class="row">
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
-								NAME : <label> MANI </label>
-							</div>	
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
-								Mobile: <label> 8870134052 </label>
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-								Customer Id : <label> ID00001 </label>
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
-								Email : <label> sankarmani110@gmail.com </label>
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-								Expires : <label> 15/04/2018 </label>
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow">
-								<center>
-								<button class="btn btn-info service_details_btn" > Service Details </button>
-								</center>
-							</div>
-						</div>
-					</div>
-							
-				</td>  
-			</tr>
-			
-			<tr class="service_add" style="display:none">  
-				<td>
-					<div class="Service_add_close">X</div><br><br>
-					<div class="container service_type">
-						<form action="">
-							<div class="row" style="margin-top:2%">
-								<div class="col-lg-5 form-group" tyle="background-color:red">
-									<div>
-										Enter Customer Name :<input type="text" class="form-control" id="cus_name">
-									</div><br>
-									<div>
-										Mobile Number : <input type="text" class="form-control" id="mobile_no">	
-									</div><br>
-									<div>
-										Email Id: <input type="email" class="form-control" id="email_id">
-									</div>
-									<!--  <div>										
-										Service Type : 
-									</div><br>
-									<div>
-										From Date :	<input type="date">
-									</div><br>
-									<div>
-										To Date &nbsp &nbsp : <input type="date">
-									</div>
-									-->
-								</div>	
-								<div class="col-lg-2 form-group vl" tyle="background-color:yellow">
-									
-								</div>
-								<div class="col-lg-5 form-group" tyle="background-color:blue">
-									<div>										
-										Service Type : <input type="email" class="form-control" id="email_id">
-									</div><br>
-									<div>
-										<span>From Date :<input type="date" class="form-control"></span><br>
-										<span>To Date :<input type="date" class="form-control"></span>
-									</div><br>
-									<div>
-										Details :	<textarea class="form-control" rows="4" id="comment"></textarea>
-									</div>
-									
-								</div>
-							</div>	
-							<div>
-								<div>
-									
-									<button class="btn btn-info save_btn" > SAVE </button>
-								
-								</div>
-							</div>
-						</form>	
-					</div>		
-				</td>  
-			</tr> 			
-		</tbody> 
-		 
-	</table>
-</div>
-
 		
 		<!-- Table Body starts 
 		<tbody>
@@ -566,7 +409,7 @@
 				
 			</tbody> 
 		 </table> -->
-		 <table id="table_id" class="display table" width="100%" >
+		 <table id="table_id" class="display">
     		<thead>
 		        <tr>
 		            <th>Customer Id</th>
@@ -583,37 +426,30 @@
 		            <td>ID0001</td>
 		            <td>Manisankar</td>
 		            <td>8870134052</td>
-		            <td>TN 04</td>
-		            <td>13/03/2018</td>
+		            <td>TN 02</td>
+		            <td>12/03/2018</td>
 		            <td>
-		            	<div class="service_details" tyle="border:2px solid yellow">
-							<center>
-								<button class="btn btn-info service_details_btn" > View Service Details </button>
-							</center>
-						</div>
-		            </td>
-		            
-		        </tr>
+						<center>
+							<button class="btn btn-info service_details_btn" > View Service Details </button>
+						</center>
+					</td>
+				</tr>
 		        <tr>
 		        	<td>ID0002</td>
 		        	<td>Arun</td>
-		        	<td>9092959487</td>
+		            <td>9092959487</td>
 		            <td>TN 01</td>
-		            <td>13/03/2018</td>
+		            <td>12/03/2018</td>
 		            <td>
-		            	<div class="service_details" tyle="border:2px solid yellow">
-							<center>
-								<button class="btn btn-info service_details_btn" > View Service Details </button>
-							</center>
-						</div>
-		            </td>
+						<center>
+							<button class="btn btn-info service_details_btn" > View Service Details </button>
+						</center>
+					</td>
 		        </tr>
 		    </tbody>
 		</table>
 		 
 	</div>
-
-	
-
+</div>	
 </body>    
 </html>

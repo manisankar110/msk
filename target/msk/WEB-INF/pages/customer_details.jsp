@@ -18,22 +18,31 @@
 	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 	<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+  	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+	
 
 
 	<link rel="stylesheet" href="../css/bootstrapValidator.css">
 	<script src="../js/bootstrapValidator.js"></script>
 
 
-=======
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 </head>
 <script>
 	$(document).ready(function(){
 		$('#myTable').dataTable();
 	});
+	$(document).ready( function () {
+	    $('#table_id').DataTable();
+	} );
 	$(document).ready(function(){
-<<<<<<< HEAD
+
+		$('.add').click(function(){
+		   $('.service_add').toggle();
+		   $(".add").hide();
+		});
+		
 
 		$('.add_cust').click(function(){
 		   $('.service_add').toggle();
@@ -128,18 +137,18 @@
 				            
 	
 	
-=======
-		$('.add').click(function(){
-		   $('.service_add').toggle();
-		   $(".add").hide();
-		});
-		
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
+
 		$(".service_details_close").click(function(){
 			$(".service_add").hide();
 			$(".add").show();
 		});
-<<<<<<< HEAD
+
+	});
+	$(document).ready(function(){
+		$(".service_add_close").click(function(){
+			$(".service_add").hide();
+		});
+	});
 
 		$(".service_add_close").click(function(){
 			$(".service_add").hide();
@@ -162,14 +171,6 @@
 	});
 	
 
-=======
-	});
-	$(document).ready(function(){
-		$(".service_add_close").click(function(){
-			$(".service_add").hide();
-		});
-	});
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 </script>
 <style>
 	
@@ -195,12 +196,9 @@
 		padding: 16px;
 		margin-top: 5%;
 		height:auto;
-<<<<<<< HEAD
+
 
 		background-image: url("car-bg.jpg");
-
-=======
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	}
 	#myTable_filter{
 		margin-right:3%;
@@ -216,7 +214,7 @@
 		color:white;
 	}
 	.main{
-		width:98%;
+		width:90%;
 	}
 	.navbar-inverse{
 		border-radius:0px;
@@ -235,7 +233,6 @@
 		width:12%;
 	}
 	.btn{
-<<<<<<< HEAD
 
 		padding:3px 10px;
 		border-radius:0px;
@@ -248,9 +245,6 @@
 		font-weight:bold;
 		color:black;
 
-=======
-		padding:3px 12px;
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
 	}
 	input[type=date]{
 		border-radius:5px;
@@ -274,21 +268,23 @@
 		margin-left:2%;
 		width:14%;
 	}
-<<<<<<< HEAD
+
 
 
 	.glyphicon-remove-circle{
 		cursor:pointer;
-=======
+
 	.Service_add_close{
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
+
+
+	.glyphicon-remove-circle{
+		cursor:pointer;
+
 		float:right;
 		margin-right:4%;
 		margin-top:2%;
 		font-size:1.5em;
 	}
-<<<<<<< HEAD
-
 
 	.glyphicon-plus-sign,.add{
 		opacity:0.2;
@@ -308,17 +304,36 @@
 	
 
 
+
 </style>  
 <body>
-<div>
-<!-- Navigation bar Start -->
+	<div>
+		<!-- Navigation bar Start -->
 
-=======
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Navigation bar Ends -->	
+
+
+<div class="container" style="background-color:black">
+	<h1>adasdasd</h1>
+		
+</div>	
+</div>
+
 	
 </style>  
 <body>
 <div>
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
+
+<!-- Navigation bar Start -->
+
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -327,147 +342,33 @@
 		</div>
 	</nav>
 
-<<<<<<< HEAD
+
+<div class="table-responsive container main">
+	<table id="myTable" class="display table" width="100%"  >
+
 <!-- Navigation bar Ends -->	
 
+
 <div class="table-responsive container main">
-<!-- Table Starts -->
+
+<!-- Table Starts 
 	<table id="myTable" class="display table" width="100%"  >
-		<!-- Table header starts-->
+
+		<!-- Table header starts
 
 =======
-<div class="table-responsive container main">
-	<table id="myTable" class="display table" width="100%"  >
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
+		<!-- Table header starts-->
+
 		<thead class="thead" >  
 			<tr>  
 				<th><h4><center>Customer Service Details</center></h4></th>  
 			</tr>  
 		</thead>  
-<<<<<<< HEAD
 
-		<!-- Table header Ends -->
-		
-		<!-- Table Body starts -->
-		<tbody>
 
-			<tr class="add_cust">
-				<td class="add_cust_details">
-					<h4><center><span class="glyphicon glyphicon-plus-sign" style="font-size:36px;"></span><span class="add"><b>ADD</b> </span></center></h4>
-				</td>
-			</tr>
-			
-			<tr class="service_add" style="display:none">
-				<td>
-					<form action="" id="add_details" method="post">	
-						<div class="service_add_close "><span class="glyphicon glyphicon-remove-circle"></span></div><br><br>
-							<div class="container service_type form-group">
-								<div class="row" style="margin-top:2%">
-									<div class="col-lg-5" tyle="background-color:red">
-										<div class="form-group">
-											Enter Customer Name :<input type="text" class="form-control" name="cus_name" id="cus_name" value="">
-											<small class="help-block invalid-name" style="color:#a94442"></small>  
-										</div><br>
-										<div class="form-group">
-											Mobile Number : <input type="text" class="form-control" name="mobile_no" id="mobile_no" >	
-											<small class="help-block invalid-mob" style="display:none;color:#a94442" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="VALID" ></small> 
-										</div><br>
-										<div class="form-group">
-											Email Id: <input type="email" class="form-control" name="email_id" id="email_id" >
-											<small class="help-block invalid-mail" style="color:#a94442"></small> 
-										</div>
-									</div>	
+		<!-- Table header Ends 
 
-									<div class="col-lg-2 vl" tyle="background-color:yellow">
-									
-									</div>
-									<div class="col-lg-5 " tyle="background-color:blue">
-										<div class="form-group">										
-											Service Type : <input type="email" class="form-control" id="email_id" name="service_type" >
-										</div><br>
-										<div class="form-group">
-											From Date :<input type="date" class="form-control" name="from_date">
-										</div><br>
-										<div class="form-group">
-											To Date :<input type="date" class="form-control" name="to_date">
-										</div><br>
-										<div class="form-group">
-											Details :	<textarea class="form-control" rows="4" id="comment" name="comment"></textarea>
-										</div>
-									</div>
-								</div>
-							
-										<div class="form-group">
-											<div class="col-md-9 col-md-offset-3">
-												<div id="messages"></div>
-											</div>
-										</div>		
-							<div class=" ">
-								<div class="form-group">
-									<button class="btn btn-info save_btn" name="action"> SAVE </button>
-								</div>
-							</div>
-						</form>			
-					</td>  
-				</tr> 			
-							
-				<tr>  
-					<td >
-						<div class="container-fluid "style="display:n">
-							<div class="row">
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
-									NAME : <label> MANI </label>
-								</div>	
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
-									Mobile: <label> 8870134052 </label>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-									Customer Id : <label> ID00001 </label>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
-									Email : <label> sankarmani110@gmail.com </label>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-									Expires : <label> 15/04/2018 </label>
-								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow">
-									<center>
-									<button class="btn btn-info service_details_btn" > View Service Details </button>
-									</center>
-								</div>
-								 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow;">
-									<center>
-										<button class="btn btn-info close_btn"style="display:none" > Close</button>
-									</center>
-								</div>
-							</div>
-						</div>
-					</td>  
-				</tr>
-				<tr>
-					<td>
-						<div class="container view_service_details"style="display:none">
-							<div class="row">
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
-									Service Type : <label> Full service </label>
-								</div>	
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
-									From date: <label> 11/03/2018 </label>
-								</div>
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-									To date : <label> 15/03/2018 </label>
-								</div>
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
-									comment : <label> buibyvuvyuuvyutvvtuuvyyvbiyibyibyibuibybiyyb </label>
-								</div>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</tbody> 
-		 </table>
-	</div>
-=======
+
 		<tbody>
 			<tr class="add">
 				<td><b><h3><center>ADD</center></h3></b></td>
@@ -564,7 +465,155 @@
 		 
 	</table>
 </div>
->>>>>>> 03ecda00d576704d94f725bf4a174094466ea2b6
-</div>	
+
+		
+		<!-- Table Body starts 
+		<tbody>
+
+			<tr class="add_cust">
+				<td class="add_cust_details">
+					<h4><center><span class="glyphicon glyphicon-plus-sign" style="font-size:36px;"></span><span class="add"><b>ADD</b> </span></center></h4>
+				</td>
+			</tr>
+			
+			<tr class="service_add" style="display:none">
+				<td>
+					<form action="" id="add_details" method="post">	
+						<div class="service_add_close "><span class="glyphicon glyphicon-remove-circle"></span></div><br><br>
+							<div class="container service_type form-group">
+								<div class="row" style="margin-top:2%">
+									<div class="col-lg-5" tyle="background-color:red">
+										<div class="form-group">
+											Enter Customer Name :<input type="text" class="form-control" name="cus_name" id="cus_name" value="">
+											<small class="help-block invalid-name" style="color:#a94442"></small>  
+										</div><br>
+										<div class="form-group">
+											Mobile Number : <input type="text" class="form-control" name="mobile_no" id="mobile_no" >	
+											<small class="help-block invalid-mob" style="display:none;color:#a94442" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="VALID" ></small> 
+										</div><br>
+										<div class="form-group">
+											Email Id: <input type="email" class="form-control" name="email_id" id="email_id" >
+											<small class="help-block invalid-mail" style="color:#a94442"></small> 
+										</div>
+									</div>	
+
+									<div class="col-lg-2 vl" tyle="background-color:yellow">
+									
+									</div>
+									<div class="col-lg-5 " tyle="background-color:blue">
+										<div class="form-group">										
+											Service Type : <input type="email" class="form-control" id="email_id" name="service_type" >
+										</div><br>
+										<div class="form-group">
+											From Date :<input type="date" class="form-control" name="from_date">
+										</div><br>
+										<div class="form-group">
+											To Date :<input type="date" class="form-control" name="to_date">
+										</div><br>
+										<div class="form-group">
+											Details :	<textarea class="form-control" rows="4" id="comment" name="comment"></textarea>
+										</div>
+									</div>
+								</div>
+							
+										<div class="form-group">
+											<div class="col-md-9 col-md-offset-3">
+												<div id="messages"></div>
+											</div>
+										</div>		
+							<div class=" ">
+								<div class="form-group">
+									<button class="btn btn-info save_btn" name="action"> SAVE </button>
+								</div>
+							</div>
+						</form>			
+					</td>  
+				</tr> 			
+							
+				<tr>  
+					<td >
+						<div class="container-fluid "style="display:n">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
+									NAME : <label> MANI </label>
+								</div>	
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
+									Mobile: <label> 8870134052 </label>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
+									Customer Id : <label> ID00001 </label>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
+									Email : <label> sankarmani110@gmail.com </label>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
+									Expires : <label> 15/04/2018 </label>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow">
+									<center>
+									<button class="btn btn-info service_details_btn" > View Service Details </button>
+									</center>
+								</div>
+								 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 service_details" tyle="border:2px solid yellow;">
+									<center>
+										<button class="btn btn-info close_btn"style="display:none" > Close</button>
+									</center>
+								</div>
+							</div>
+						</div>
+					</td>  
+				</tr>
+				
+			</tbody> 
+		 </table> -->
+		 <table id="table_id" class="display table" width="100%" >
+    		<thead>
+		        <tr>
+		            <th>Customer Id</th>
+		            <th>Name</th>
+		            <th>Mobile no</th>
+		            <th>Registration No</th>
+		            <th>Last Service</th>
+		            <th>Button</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    	
+		        <tr>
+		            <td>ID0001</td>
+		            <td>Manisankar</td>
+		            <td>8870134052</td>
+		            <td>TN 04</td>
+		            <td>13/03/2018</td>
+		            <td>
+		            	<div class="service_details" tyle="border:2px solid yellow">
+							<center>
+								<button class="btn btn-info service_details_btn" > View Service Details </button>
+							</center>
+						</div>
+		            </td>
+		            
+		        </tr>
+		        <tr>
+		        	<td>ID0002</td>
+		        	<td>Arun</td>
+		        	<td>9092959487</td>
+		            <td>TN 01</td>
+		            <td>13/03/2018</td>
+		            <td>
+		            	<div class="service_details" tyle="border:2px solid yellow">
+							<center>
+								<button class="btn btn-info service_details_btn" > View Service Details </button>
+							</center>
+						</div>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+		 
+	</div>
+
+	
+
 </body>    
 </html>
