@@ -18,7 +18,9 @@
 	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 	<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+  	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+	
 
 	<link rel="stylesheet" href="../css/bootstrapValidator.css">
 	<script src="../js/bootstrapValidator.js"></script>
@@ -29,6 +31,9 @@
 	$(document).ready(function(){
 		$('#myTable').dataTable();
 	});
+	$(document).ready( function () {
+	    $('#table_id').DataTable();
+	} );
 	$(document).ready(function(){
 
 		$('.add_cust').click(function(){
@@ -193,7 +198,7 @@
 		color:white;
 	}
 	.main{
-		width:98%;
+		width:90%;
 	}
 	.navbar-inverse{
 		border-radius:0px;
@@ -278,23 +283,31 @@
 
 </style>  
 <body>
-<div>
-<!-- Navigation bar Start -->
+	<div>
+		<!-- Navigation bar Start -->
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">WebSiteName</a>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">WebSiteName</a>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
-<!-- Navigation bar Ends -->	
+		<!-- Navigation bar Ends -->	
+
+
+<div class="container" style="background-color:black">
+	<h1>adasdasd</h1>
+		
+</div>	
+</div>
 
 <div class="table-responsive container main">
-<!-- Table Starts -->
+
+<!-- Table Starts 
 	<table id="myTable" class="display table" width="100%"  >
-		<!-- Table header starts-->
+		<!-- Table header starts
 
 		<thead class="thead" >  
 			<tr>  
@@ -302,9 +315,9 @@
 			</tr>  
 		</thead>  
 
-		<!-- Table header Ends -->
+		<!-- Table header Ends 
 		
-		<!-- Table Body starts -->
+		<!-- Table Body starts 
 		<tbody>
 
 			<tr class="add_cust">
@@ -400,29 +413,55 @@
 						</div>
 					</td>  
 				</tr>
-				<tr>
-					<td>
-						<div class="container view_service_details"style="display:none">
-							<div class="row">
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2 name" tyle="border:2px solid red">
-									Service Type : <label> Full service </label>
-								</div>	
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2"  tyle="border:2px solid red">	
-									From date: <label> 11/03/2018 </label>
-								</div>
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2" tyle="border:2px solid red">
-									To date : <label> 15/03/2018 </label>
-								</div>
-								<div class="col-lg- col-md-2 col-sm-2 col-xs-2 email" tyle="border:2px solid blue">
-									comment : <label> buibyvuvyuuvyutvvtuuvyyvbiyibyibyibuibybiyyb </label>
-								</div>
-							</div>
-						</div>
-					</td>
-				</tr>
+				
 			</tbody> 
-		 </table>
+		 </table> -->
+		 <table id="table_id" class="display table" width="100%" >
+    		<thead>
+		        <tr>
+		            <th>Customer Id</th>
+		            <th>Name</th>
+		            <th>Mobile no</th>
+		            <th>Registration No</th>
+		            <th>Last Service</th>
+		            <th>Button</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    	
+		        <tr>
+		            <td>ID0001</td>
+		            <td>Manisankar</td>
+		            <td>8870134052</td>
+		            <td>TN 04</td>
+		            <td>13/03/2018</td>
+		            <td>
+		            	<div class="service_details" tyle="border:2px solid yellow">
+							<center>
+								<button class="btn btn-info service_details_btn" > View Service Details </button>
+							</center>
+						</div>
+		            </td>
+		            
+		        </tr>
+		        <tr>
+		        	<td>ID0002</td>
+		        	<td>Arun</td>
+		        	<td>9092959487</td>
+		            <td>TN 01</td>
+		            <td>13/03/2018</td>
+		            <td>
+		            	<div class="service_details" tyle="border:2px solid yellow">
+							<center>
+								<button class="btn btn-info service_details_btn" > View Service Details </button>
+							</center>
+						</div>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+		 
 	</div>
-</div>	
+	
 </body>    
 </html>

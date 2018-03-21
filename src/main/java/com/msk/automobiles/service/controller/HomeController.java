@@ -49,15 +49,23 @@ public class HomeController {
 	Environment env;
 
 	@GET
+	@Path("/")
+	public Viewable index() {
+		return new Viewable("/index");
+	}
+
+	@GET
 	@Path("/login")
 	public Viewable login() {
 		return new Viewable("/login");
 	}
+
 	@GET
 	@Path("/customer_details")
 	public Viewable customer_details() {
 		return new Viewable("/customer_details");
 	}
+
 	@POST
 	@Path("/login")
 	public Response login_cred(@FormParam("username") String username, @FormParam("password") String password,
